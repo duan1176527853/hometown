@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>乡村振兴</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script  type="text/javascript"   language="javascript">
+		window.onload = function(){
+		var box=this.document.getElementsByClassName("re")[0];
+		var lik=box.getElementsByTagName("li");
+		function fun(i,j){//转换图片函数，就是把透明度改了一下
+			lik[i].style.opacity=1;
+			lik[j].style.opacity=0;
+			lik[i+5].style.backgroundColor="#ffffff";//改一下小图标
+			lik[j+5].style.backgroundColor="#00000000"
+		}
+		fun(0,1);//初始化下
+		var i =0;
+		function auto(){//轮播循环函数
+			if(++i>=5){
+			i=0;
+			fun(0,4);
+			}
+			else fun(i,i-1);
+		}
+		timer=this.setInterval(auto,2000);
+		box.onmouseover = function () { //鼠标划上去，停止轮播
+			console.log('good');
+			clearInterval(timer);
+		}
+		box.onmouseout = function () { //鼠标划出，继续轮播
+			timer = setInterval(auto, 4000); //调用定时器
+		}
+		var j =0;
+		for(;j<5;j++){//点击小图标也可以转换图片
+			lik[j+5].ind=j;
+			lik[j+5].onclick=function(){
+			fun(this.ind,i)
+			i=this.ind;
+			}
+		}
+
+		}
+
+	</script>
+</head>
+<body> 
+	<div class="container">
+                      <div class="bodystyle">
+						  <div class="first">
+							<div class="container">
+								<form action="" class="parent">
+									<input type="text" class="search" placeholder="搜索">
+									<input type="button" name="" id="" class="btn">
+								</form>
+							</div> 
+							<h2 style="text-align: center;font-size: smaller;text-align: right;"><img style="width:80px;"src="image/LOGO.jpg"><img style="width: 750px; height: 120px;" src="image/宣传标语.png">
+								<tr>&nbsp&nbsp商务合作&nbsp&nbspQQ:340833389</tr>
+								<tr>&nbsp&nbsp&nbsp抖音:28637558005</tr>
+								<img style="width: 60px;"src="image/意见反馈.jpg" ><a href="mailto:340833389@qq.com" style="padding-right: 5%;">意见反馈</a>
+							</imag></imag>
+						</h2>
+								</div>
+		
+		<div class="header">
+			<ul>
+				<li><a href="index.html" style="color: red">首页</a></li>
+				<li><a href="html/history.html">美丽乡村</a></li>
+				<li><a href="html/scenery.html">成果展示</a></li>
+				<li><a href="html/famous.html">振兴智库</a></li>
+				<li><a href="html/food.html" target="_blank">团队情况</a></li>
+				<li><a href="https://shop201700720.m.taobao.com" target="_blank">乡村商品</a></li>
+			</ul>
+		</div>
+		<div id="max">
+			<div class="re">
+				<ul>
+					<li><img src="image/滚动1.jpg" alt=""></li>
+					<li><img src="image/滚动.jpg" alt=""></li>
+					<li><img src="image/滚动吧.jpg" alt=""></li>
+					<li><img src="image/滚动了.webp" alt=""></li>
+					<li><img src="image/滚动.webp" alt=""></li>
+				</ul>
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+		</div>
+		<div class="news_con">
+			<!-- 最左侧的盒子 -->
+					<div class="news_l">
+						<h3 class="news_title">政治要闻</h3>
+						<ul class="news_list">	
+							<li>
+								<a href="新闻网页/1.html" target="_blank">1.习近平:把实施乡村振兴战略摆在优先位置</a>
+								<span>2021-06-19</span>
+							</li>
+							<li>
+								<a href="新闻网页/2.html" target="_blank">2.接好“接力棒” 跑好“接力赛”元谋法院乡村振兴工作队员活跃农村</a>
+								<span>2021-06-18</span>
+							</li>
+							<li>
+								<a href="新闻网页/3.html" target="_blank">乡村建设行动关键在行动</a>
+								<span>2021-06-17</span>
+							</li>
+							<li>
+								<a href="新闻网页/4.html" target="_blank">“助力三农、振兴乡村” 2021首届（BGVF）博鳌绿谷论坛成功举办</a>
+								<span>2021-06-17</span>
+							</li>
+							<li>
+								<a href="新闻网页/5.html" target="_blank">
+									国家发展改革委下达农村产业融合发展示范园建设2021年中央预算内投资计划
+								</a>
+								<span>2021-06-15</span>
+							</li>
+						
+						</ul>
+					</div>
+			<!-- 中间的盒子-->
+					 <div class="news_c">
+						<h3 class="news_title">快讯新闻</h3>
+						<p>&nbsp;</p>
+						<ol style="line-height: 30px;">
+						<li>
+							<a class="txt1" href="新闻网页/6.html" target="_blank">*巩固脱贫攻坚成果 接续奋斗乡村振兴</a>
+						</li>
+						<li>
+								<a class="txt2"  href="新闻网页/7.html" target="_blank">*西子慈善基金助力永嘉 “乡村人才赋能制造业高质量发展”</a>
+						</li>
+						<li>
+							<a class="txt1" href="新闻网页/8.html" target="_blank">*小店经济是乡村振兴的重要组成部分</a>
+						</li>
+						<li>
+							<a class="txt1" href="新闻网页/9.html" target="_blank">*李克强：加强农村义务教育薄弱环节要重点放在教师上</a>
+						</li>
+						<li>
+							<a class="txt1" href="新闻网页/10.html" target="_blank">*张近东代表：以“品质下乡”推动农村消费升级</a>
+						</li>
+						<li>
+							<a class="txt1" href="新闻网页/11.html" target="_blank">*李克强主持召开国务院常务会议 确定加强农村义务教育薄弱环节的措施</a>
+						</li>
+					
+						</ol>
+					</div>
+					<!-- <div class="news_r">
+						<h3 class="news_title">项目新闻</h3>
+						<a class="txt3">**就高母村、曲村、太子庄村等六个村的改善计划</a>
+					</div> -->
+					 </div> 
+					 <h2 style="text-align: center;"><img src="image/分割2.png" style="width: 100%;height: 100px;"></h2>
+		<div class="main">
+			<ul class="list">
+				<li class="introduce">
+					<ul>
+						
+						<li>
+							<h1 ><a href="新闻网页/12.html">乡村“新治理”十三种模式</a></h1>
+							<img src="image/新闻.jpg" width="50%">
+						</li>
+						
+						<li>
+							<br/><br/>
+							<a href="新闻网页/10.html">1.张近东代表：以“品质下乡”推动农村消费升级</a>
+							<br/><br/>
+							<a href="新闻网页/13.html">2.​王学军：牢牢把握“三农”工作重心 奋力开创西吉“三农”工作新局面</a>
+							<br/><br/>
+							<a href="新闻网页/14.html">3.新华时评：乡村振兴要让农民有获得感</a>
+							<br/><br/>
+							<a href="新闻网页/15.html">4.新华时评：乡村振兴要一茬接着一茬干</a>
+						</li>
+					</ul>
+				</li>
+				<li class="introduce">
+					<ul>
+						
+						<li>
+							<h1 ><a href="新闻网页/16.html">中国农业科学院乡村振兴学院揭牌</a></h1>
+							<img src="image/新闻1.jpg" width="50%">
+						</li>
+						
+						<li>
+							<br/><br/>
+							<a href="新闻网页/17.html">1.村在景中，人在画中：甘肃乡村旅游巧打“土味”牌</a>
+							<br/><br/>
+							<a href="新闻网页/18.html">2.发展数字乡村经济可推动农村产业升级</a>
+							<br/><br/>
+							<a href="新闻网页/19.html">3.黄山：做好新型农民培训　加速乡村振兴</a>
+							<br/><br/>
+							<a href="新闻网页/20.html">4.助力乡村振兴　四川首批乡村旅游“两师一员”培训启动</a>
+						</li>
+					</ul>
+				</li>
+				<li class="introduce">
+					<ul>
+						
+						<li>
+							<h1 ><a href="新闻网页/21.html">振兴乡村，须重识乡村</a></h1>
+							<img src="image/新闻2.jpg" width="50%">
+						</li>
+						
+						<li>
+							<br/><br/>
+							<a href="新闻网页/22.html">1.国家乡村振兴战略暨创新成果研讨会·2019在北京国宏宾馆举行</a>
+							<br/><br/>
+							<a href="新闻网页/23.html">2.首届“BISU态度”专家峰会召开</a>
+							<br/><br/>
+							<a href="新闻网页/24.html">3.除了厕和路，还有哪些短板掣肘乡村振兴？</a>
+							<br/><br/>
+							<a href="新闻网页/26.html">4.奋斗百年路｜看百年大党的制度自信</a>
+						</li>
+					</ul>
+				</li>
+				<li class="introduce">
+					<ul>
+						
+						<li>
+							<h1 ><a href="新闻网页/26.html">给村民交一份“美丽乡村”答卷</a></h1>
+							<img src="image/新闻4.jpg" width="50%">
+						</li>
+						
+						<li>
+							<br/><br/>
+							<a href="新闻网页/27.html">1.章丘三涧溪村谱写乡村振兴新篇章</a>
+							<br/><br/>
+							<a href="新闻网页/28.html">2.建设好生态宜居的美丽乡村</a>
+							<br/><br/>
+							<a href="新闻网页/29.html">3.美丽乡村建设：着眼持久美　着手小而美</a>
+							<br/><br/>
+							<a href="新闻网页/30.html">4.“剃头挑子一头热”不能振兴乡村！</a>
+						</li>
+					</ul>
+				</li>
+				<li class="introduce">
+					<ul>
+						
+						<li>
+							<h1 ><a href="新闻网页/17.html">村在景中，人在画中</a></h1>
+							<img src="image/新闻5.jpg" width="50%">
+						</li>
+						
+						<li>
+							<br/><br/>
+							<a href="新闻网页/31.html">1.2021年版外资准入负面清单将进一步缩减</a>
+							<br/><br/>
+							<a href="新闻网页/32.html">2.关注河南省农业高质量发展之五：数字乡村越来越近</a>
+							<br/><br/>
+							<a href="新闻网页/33.html">3.探索农村社群生态圈新模式　助力乡村振兴战略实施</a>
+							<br/><br/>
+							<a href="新闻网页/34.html">4.农村电商为乡村振兴注入“活水”</a>
+						</li>
+					</ul>
+					<li class="introduce">
+						<ul>
+							
+							<li>
+								<h1><a href="新闻网页/35.html">涂圣伟：乡村振兴中“有为政府”的行...</a></h1>
+								<img src="image/新闻6.jpg" width="50%">
+							</li>
+							
+							<li>
+								<br/><br/>
+								<a href="新闻网页/36.html">1.长三角一体化发展步入快车道　助推乡村振兴战略全面实施长三角经济圈解题“乡村振兴”</a>
+								<br/><br/>
+								<a href="新闻网页/37.html">2.从一穷二白到高质量发展——雪域高原的产业发展“交响曲”</a>
+								<br/><br/>
+								<a href="新闻网页/38.html">3.西红柿经济助力乡村振兴</a>
+								<br/><br/>
+								<a href="新闻网页/39.html">4.柳中辉：为乡村振兴提供浔龙河样本</a>
+							</li>
+						</ul>
+					</li>
+		</div> 
+		<h2 style="text-align: center;"><img src="image/分割图1.jpg" style="width: 100%;height: 10%;"></h2>
+		<div class="footer">
+			<p>
+				<a href="../html/food.html">关于我们</a>
+				<a href="#">联系我们</a>
+				<a href="mailto:340833389@qq.com">反馈</a>
+				<a href="javascript::" style="border: none">更多</a>
+			</p>
+		</div>
+				   </div>
+	</div>
+</body>
+</html>
